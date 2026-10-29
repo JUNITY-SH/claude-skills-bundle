@@ -1,0 +1,6 @@
+# Dépôts dont les skills (dossier skills/<nom>/SKILL.md) sont regroupées dans ce bundle.
+# Ajouter une ligne owner/repo ; la GitHub Action reconstruit le bundle chaque lundi.
+obra/superpowers
+tw93/Waza
+Jeffallan/claude-skills
+Nutlope/hallmark
