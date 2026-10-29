@@ -15,3 +15,11 @@ Installe les skills dans `~/.claude/skills`. Sert de setup script pour les envir
 ## Ajouter une source
 
 Ajouter `owner/repo` dans `sources.txt` : le bundle est reconstruit au push.
+
+## Mise à jour automatique sur un Mac
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/JUNITY-SH/claude-skills-bundle/main/setup-mac.sh | bash
+```
+
+Programme une mise à jour chaque mardi à 10h (tâche launchd) ; le journal est dans `~/Library/Logs/claude-skills-update.log`.
