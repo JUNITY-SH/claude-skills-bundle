@@ -23,3 +23,13 @@ curl -fsSL https://raw.githubusercontent.com/JUNITY-SH/claude-skills-bundle/main
 ```
 
 Programme une mise à jour chaque mardi à 10h (tâche launchd) ; le journal est dans `~/Library/Logs/claude-skills-update.log`.
+
+## Installation sur un PC Windows
+
+Dans PowerShell (Git for Windows requis, comme pour Claude Code) :
+
+```powershell
+irm https://raw.githubusercontent.com/JUNITY-SH/claude-skills-bundle/main/setup-windows.ps1 | iex
+```
+
+Installe le CLAUDE.md global (`rules/CLAUDE.md`, l'ancien est sauvegardé), les skills, et une tâche planifiée « Claude skills update » chaque mardi à 10h.
