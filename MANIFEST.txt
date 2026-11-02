@@ -401,6 +401,7 @@ hallmark/scripts/refcheck.mjs
 hallmark/scripts/sloplint-render.mjs
 hallmark/scripts/sloplint.mjs
 hallmark/scripts/theme.mjs
+hallmark/scripts/theme.test.mjs
 health/SKILL.md
 health/agents/inspector-context.md
 health/agents/inspector-control.md
