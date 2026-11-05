@@ -4,3 +4,4 @@ obra/superpowers
 tw93/Waza
 Jeffallan/claude-skills
 Nutlope/hallmark
+gsarig/skills
