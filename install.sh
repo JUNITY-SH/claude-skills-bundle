@@ -11,15 +11,16 @@ STATE="$DEST/.bundle-managed"
 STAGE=$(mktemp -d)
 trap 'rm -rf "$STAGE"' EXIT
 
-if ! curl -fsSL --retry 3 "$BASE/MANIFEST.txt" -o "$STAGE/MANIFEST.txt"; then
+if ! curl -fsSL --retry 5 --retry-all-errors --retry-delay 2 "$BASE/MANIFEST.txt" -o "$STAGE/MANIFEST.txt"; then
   echo "Skills : manifeste injoignable, rien n'est modifié" >&2; exit 0
 fi
 
 mkdir -p "$STAGE/skills"
-tr '\n' '\0' < "$STAGE/MANIFEST.txt" | BASE="$BASE" S="$STAGE/skills" xargs -0 -P 16 -n 1 sh -c '
+# --retry-all-errors : sans lui, curl ne rejoue pas les connexions coupées (erreur 56)
+tr '\n' '\0' < "$STAGE/MANIFEST.txt" | BASE="$BASE" S="$STAGE/skills" xargs -0 -P 8 -n 1 sh -c '
   [ -n "$0" ] || exit 0
   mkdir -p "$S/$(dirname "$0")"
-  curl -fsSL --retry 3 -o "$S/$0" "$BASE/skills/$0" || { echo "Échec : $0" >&2; exit 255; }
+  curl -fsSL --retry 5 --retry-all-errors --retry-delay 2 -o "$S/$0" "$BASE/skills/$0" || { echo "Échec : $0" >&2; exit 255; }
 '
 if [ $? -ne 0 ]; then echo "Skills : téléchargement incomplet, rien n'est modifié" >&2; exit 0; fi
 
