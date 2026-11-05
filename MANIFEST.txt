@@ -16,6 +16,8 @@ architecture-designer/references/architecture-patterns.md
 architecture-designer/references/database-selection.md
 architecture-designer/references/nfr-checklist.md
 architecture-designer/references/system-design.md
+archive-plan/README.md
+archive-plan/SKILL.md
 atlassian-mcp/SKILL.md
 atlassian-mcp/references/authentication-patterns.md
 atlassian-mcp/references/common-workflows.md
@@ -53,6 +55,8 @@ check/scripts/audit_signals.py
 check/scripts/incident_ledger.py
 check/scripts/release_gate.py
 check/scripts/run-tests.sh
+claude-windows/README.md
+claude-windows/SKILL.md
 cli-developer/SKILL.md
 cli-developer/references/design-patterns.md
 cli-developer/references/go-cli.md
@@ -74,6 +78,16 @@ code-documenter/references/interactive-api-docs.md
 code-documenter/references/python-docstrings.md
 code-documenter/references/typescript-jsdoc.md
 code-documenter/references/user-guides-tutorials.md
+code-review-content/SKILL.md
+code-review-deep/SKILL.md
+code-review-infra/SKILL.md
+code-review-lite/SKILL.md
+code-review/README.md
+code-review/SKILL.md
+code-review/references/js-security.md
+code-review/references/review-checklist.md
+code-review/references/review-shared.md
+code-review/scripts/code-review-state.sh
 code-reviewer/SKILL.md
 code-reviewer/references/common-issues.md
 code-reviewer/references/feedback-examples.md
@@ -105,6 +119,8 @@ debugging-wizard/references/debugging-tools.md
 debugging-wizard/references/quick-fixes.md
 debugging-wizard/references/strategies.md
 debugging-wizard/references/systematic-debugging.md
+devils-advocate/README.md
+devils-advocate/SKILL.md
 devops-engineer/SKILL.md
 devops-engineer/references/deployment-strategies.md
 devops-engineer/references/docker-patterns.md
@@ -153,6 +169,8 @@ dotnet-core-expert/references/clean-architecture.md
 dotnet-core-expert/references/cloud-native.md
 dotnet-core-expert/references/entity-framework.md
 dotnet-core-expert/references/minimal-apis.md
+double-check/README.md
+double-check/SKILL.md
 embedded-systems/SKILL.md
 embedded-systems/references/communication-protocols.md
 embedded-systems/references/memory-optimization.md
@@ -162,6 +180,8 @@ embedded-systems/references/rtos-patterns.md
 executing-plans/SKILL.md
 executing-plans/scripts/task-done
 executing-plans/scripts/task-start
+exit-session/README.md
+exit-session/SKILL.md
 fastapi-expert/SKILL.md
 fastapi-expert/references/async-sqlalchemy.md
 fastapi-expert/references/authentication.md
@@ -219,6 +239,8 @@ graphql-architect/references/resolvers.md
 graphql-architect/references/schema-design.md
 graphql-architect/references/security.md
 graphql-architect/references/subscriptions.md
+grill-me/README.md
+grill-me/SKILL.md
 hallmark/LICENSE
 hallmark/SKILL.md
 hallmark/agents/openai.yaml
@@ -374,12 +396,14 @@ hallmark/references/themes/wayfind.md
 hallmark/references/themes/werkstatt.jpg
 hallmark/references/themes/werkstatt.md
 hallmark/scripts/capture.mjs
+hallmark/scripts/capture.test.mjs
 hallmark/scripts/fixtures/exemplars/atmospheric.html
 hallmark/scripts/fixtures/exemplars/editorial.html
 hallmark/scripts/fixtures/exemplars/modern-minimal.html
 hallmark/scripts/fixtures/exemplars/playful.html
 hallmark/scripts/fixtures/eyebrow-fail/index.html
 hallmark/scripts/fixtures/eyebrow-pass/index.html
+hallmark/scripts/fixtures/imagegen/imagegen.test.mjs
 hallmark/scripts/fixtures/kept/after.html
 hallmark/scripts/fixtures/kept/before.html
 hallmark/scripts/fixtures/slopped.html
@@ -398,7 +422,9 @@ hallmark/scripts/lint-hook.mjs
 hallmark/scripts/photos.json
 hallmark/scripts/picture.mjs
 hallmark/scripts/refcheck.mjs
+hallmark/scripts/reroll-exhaustion.test.mjs
 hallmark/scripts/sloplint-render.mjs
+hallmark/scripts/sloplint-render.test.mjs
 hallmark/scripts/sloplint.mjs
 hallmark/scripts/theme.mjs
 hallmark/scripts/theme.test.mjs
@@ -429,6 +455,8 @@ hunt/references/failure-patterns.md
 hunt/references/ime-unicode.md
 hunt/references/logging-techniques.md
 hunt/references/rendering-debug.md
+investigate/README.md
+investigate/SKILL.md
 java-architect/SKILL.md
 java-architect/references/jpa-optimization.md
 java-architect/references/reactive-webflux.md
@@ -465,6 +493,8 @@ laravel-specialist/references/livewire.md
 laravel-specialist/references/queues.md
 laravel-specialist/references/routing.md
 laravel-specialist/references/testing.md
+layman/README.md
+layman/SKILL.md
 learn/SKILL.md
 legacy-modernizer/SKILL.md
 legacy-modernizer/references/legacy-testing.md
@@ -512,6 +542,8 @@ nextjs-developer/references/data-fetching.md
 nextjs-developer/references/deployment.md
 nextjs-developer/references/server-actions.md
 nextjs-developer/references/server-components.md
+obsidian-charts/README.md
+obsidian-charts/SKILL.md
 pandas-pro/SKILL.md
 pandas-pro/references/aggregation-groupby.md
 pandas-pro/references/data-cleaning.md
@@ -616,6 +648,8 @@ shopify-expert/references/checkout-customization.md
 shopify-expert/references/liquid-templating.md
 shopify-expert/references/performance-optimization.md
 shopify-expert/references/storefront-api.md
+simpler-path/README.md
+simpler-path/SKILL.md
 spark-engineer/SKILL.md
 spark-engineer/references/partitioning-caching.md
 spark-engineer/references/performance-tuning.md
@@ -656,6 +690,7 @@ subagent-driven-development/references/handling-reports.md
 subagent-driven-development/references/preflight.md
 subagent-driven-development/references/resuming.md
 subagent-driven-development/scripts/review-package
+subagent-driven-development/scripts/sdd-repo
 subagent-driven-development/scripts/sdd-workspace
 subagent-driven-development/scripts/task-brief
 subagent-driven-development/task-reviewer-prompt.md
@@ -665,17 +700,12 @@ swift-expert/references/memory-performance.md
 swift-expert/references/protocol-oriented.md
 swift-expert/references/swiftui-patterns.md
 swift-expert/references/testing-patterns.md
-systematic-debugging/CREATION-LOG.md
 systematic-debugging/SKILL.md
 systematic-debugging/condition-based-waiting-example.ts
 systematic-debugging/condition-based-waiting.md
 systematic-debugging/defense-in-depth.md
 systematic-debugging/find-polluter.sh
 systematic-debugging/root-cause-tracing.md
-systematic-debugging/test-academic.md
-systematic-debugging/test-pressure-1.md
-systematic-debugging/test-pressure-2.md
-systematic-debugging/test-pressure-3.md
 terraform-engineer/SKILL.md
 terraform-engineer/references/best-practices.md
 terraform-engineer/references/module-patterns.md
@@ -706,6 +736,8 @@ think/SKILL.md
 think/references/durable-context.md
 think/references/mode-evaluation.md
 think/references/mode-triage.md
+tldr/README.md
+tldr/SKILL.md
 typescript-pro/SKILL.md
 typescript-pro/references/advanced-types.md
 typescript-pro/references/configuration.md
@@ -770,6 +802,10 @@ write/references/write-zh-release-notes.md
 write/references/write-zh.md
 write/scripts/check-punctuation.sh
 write/scripts/check_punctuation.py
+writing-artifacts/README.md
+writing-artifacts/SKILL.md
+writing-instructions/README.md
+writing-instructions/SKILL.md
 writing-plans/SKILL.md
 writing-skills/SKILL.md
 writing-skills/references/CLAUDE_MD_TESTING.md
