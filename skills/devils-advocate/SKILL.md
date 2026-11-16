@@ -41,6 +41,10 @@ Apply, scaled to the calibration from step 2:
 
 **Core rule: no bare objection.** "This could fail" is not a finding. Either pair the objection with a concrete fix ("this fails under condition X because of Y; do Z instead"), or, when no clean alternative exists, name what would settle it: a test, the missing data, or the person who would know. Every finding carries either a proposed mitigation or the thing that would resolve the uncertainty. Never drop a legitimate concern just because you lack a ready fix.
 
+**Hold your own fixes to the same standard as the plan.** The scope check above applies to your recommendations too, and the cheapest fix to write is usually one more check. Before keeping a finding:
+- **Name what already catches it.** Say what in the plan or the surrounding workflow would stop this failure on its own (a human review step, an existing check, a gate). If something does, drop the finding.
+- **Name what the fix costs:** wording, an instruction, or new code or components. A fix that adds code must name a realistic path by which the failure gets past every existing control; without one, the failure is not realistic, so drop the finding. Prefer a fix that removes or narrows over one that adds.
+
 ## Important: what to avoid
 
 - **Manufactured dissent.** If the plan is genuinely sound at its stakes level, say so and keep the findings list short or empty. Do not invent objections to look rigorous.

@@ -435,6 +435,7 @@ health/agents/inspector-maintainability.md
 health/references/durable-context.md
 health/references/long-running-agents.md
 health/references/maintainability-findings.md
+health/references/prune.md
 health/scripts/block-pipe-to-shell.py
 health/scripts/check-agent-context.sh
 health/scripts/check-doc-refs.sh
@@ -443,6 +444,7 @@ health/scripts/check-verifier-output.sh
 health/scripts/check_agent_context.py
 health/scripts/check_doc_refs.py
 health/scripts/check_maintainability.py
+health/scripts/check_moved_lines.py
 health/scripts/check_verifier_output.py
 health/scripts/collect-data.sh
 health/scripts/conversation_audit.py
