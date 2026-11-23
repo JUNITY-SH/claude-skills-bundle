@@ -5,3 +5,6 @@ tw93/Waza
 Jeffallan/claude-skills
 Nutlope/hallmark
 gsarig/skills
+anthropics/skills
+forrestchang/andrej-karpathy-skills
+OthmanAdi/planning-with-files
